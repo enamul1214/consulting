@@ -1,0 +1,129 @@
+// Banner Area Start
+.banner-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 822px;
+    background-attachment: fixed;
+
+    .banner-wrapper {
+        min-height: 822px;
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+.banner-content-wrapper {
+    .banner-title {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .banner-sub-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: $orange;
+        letter-spacing: 2px;
+    }
+}
+// Banner Area End
+
+// Our Service Start
+.our-services-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    .service-right-bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 550px);
+        z-index: 1;
+    }
+}
+// Our Service End
+
+// Our Work Start
+.our-work-slider {
+    .slick-list {
+        margin: 0 -15px;
+    }
+}
+
+.work-slide-box {
+    margin: 0 15px;
+    @extend .transition;
+
+    &:hover {
+        .work-featured-image {
+            &:before {
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        .work-box-title {
+            color: $orange !important;
+        }
+    }
+
+    .work-box-title {
+        font-size: 22px;
+        font-weight: 600;
+        @extend .transition;
+    }
+
+    .work-box-sub-title {
+        font-size: 16px;
+        color: $body-color;
+        font-weight: 400;
+    }
+
+    .work-featured-image {
+        &:before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            height: 10px;
+            width: 10px;
+            background: rgba($tmpcolor, 0.2);
+            z-index: 10;
+            opacity: 0;
+            @extend .transition;
+        }
+    }
+}
+// Our Work End
+
+// Vision And Mission Start
+.vision-mission-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($tmpcolor, 0.8);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+// Vision And Mission End

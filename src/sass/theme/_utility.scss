@@ -1,0 +1,63 @@
+.section-title {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section-sub-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: $body-color;
+}
+
+.bg-light {
+    background: $light-bg;
+}
+
+.divider {
+    height: 4px;
+    background: #fff;
+}
+
+.transition {
+    transition: all .4s ease-in-out;
+}
+
+.hyperlink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    @extend .transition;
+
+    &:focus {
+        outline: 0;
+        outline: none;
+    }
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #555555;
+}
+
+.common-btn {
+    background: $orange;
+    color: $white;
+    padding: 9px 30px;
+    border-radius: 4px;
+    border: 2px solid $orange;
+    @extend .transition;
+
+    &:hover {
+        background: $white;
+        color: $orange;
+    }
+}

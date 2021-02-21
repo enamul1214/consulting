@@ -1,0 +1,8 @@
+.header {
+    z-index: 9999;
+    .navbar {
+        &.bg-light {
+            background: transparent !important;
+        }
+    }
+}
