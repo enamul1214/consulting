@@ -1,2 +1,2 @@
 # consulting
-Onepage Stido Landing Page
+Onepage Stuido Landing Page
