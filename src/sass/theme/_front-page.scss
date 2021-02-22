@@ -126,4 +126,142 @@
         z-index: 1;
     }
 }
+
+.vision-mission-box-wrapper {
+    margin-bottom: -230px;
+    box-shadow: 0 10px 20px rgba($black, 0.18);
+    .item-box {
+        background-color: #fbfbfb;
+        color: $body-color;
+        border-right: 1px solid #e0e0e0;
+        @extend .transition;
+
+        &:last-of-type {
+            border-right: 0;
+        }
+
+        &:hover {
+            background-color: #f5f5f5;
+
+            &:before {
+                right: 0;
+                opacity: 1;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            right: -194px;
+            top: 0;
+            height: 100%;
+            width: 194px;
+            background-image: url(../img/vision-mission/hover-icon.png);
+            background-repeat: no-repeat;
+            opacity: 0;
+            @extend .transition;
+        }
+
+        figure {
+            min-height: 45px;
+        }
+    }
+}
 // Vision And Mission End
+
+// Our Team Start
+.team-slider {
+    .slick-list {
+        margin: 0 -15px;
+    }
+}
+
+.team-item-box {
+    margin: 0 15px;
+    &:hover {
+        .team-mamber-featured-box {
+            &:before {
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        .social-media-list {
+            bottom: 0;
+        }
+    }
+
+    .team-mamber-featured-box {
+        &:before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            height: 10px;
+            width: 10px;
+            background: rgba($tmpcolor, 0.2);
+            z-index: 10;
+            opacity: 0;
+            @extend .transition;
+        }
+    }
+
+    .social-media-list {
+        background: rgba($tmpcolor, 0.7);
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        height: auto;
+        width: 100%;
+        z-index: 99;
+        @extend .transition;
+
+        a {
+            color: $orange;
+            padding: 5px 10px;
+        }
+    }
+
+    .team-item-title {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .team-item-subtitle {
+        font-size: 16px;
+        color: $body-color;
+        font-weight: 400;
+    }
+}
+// Our Team End
+
+// Achieve Start
+.achieve-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($tmpcolor, 0.8);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Achieve End

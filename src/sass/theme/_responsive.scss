@@ -33,6 +33,19 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) { 
-    
+    .vision-mission-box-wrapper {
+        .item-box {
+            border-right: 0;
+            border-bottom: 1px solid #e0e0e0;
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
+
+            &.w-50 {
+                width: 100% !important;
+            }
+        }
+    }
 }
 //(portrait phones, less than 576px)
