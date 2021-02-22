@@ -7,6 +7,14 @@
             }
         }
     }
+
+    .navbar-expand-md {
+        .navbar-nav {
+            .nav-link {
+                padding-right: 15px;
+            }
+        }
+    }
 }
 // (desktops, less than 1200px)
 
@@ -16,6 +24,18 @@
         p {
             margin-bottom: 20px;
         }
+    }
+
+    .navbar-expand-md {
+        .navbar-nav {
+            .nav-link {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .navbar-brand {
+        margin-right: 20px;
     }
 }
 //(tablets, less than 992px)
@@ -36,6 +56,17 @@
     
         .banner-sub-title {
             font-size: 16px;
+        }
+    }
+
+    .navbar-expand-md {
+        .navbar-nav {
+            .nav-link {
+                padding-right: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: $white !important;
+            }
         }
     }
 }

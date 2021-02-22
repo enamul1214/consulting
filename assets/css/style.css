@@ -18405,11 +18405,48 @@ a.text-dark:hover, a.text-dark:focus {
   .header .nav-link {
     color: #fff !important; }
   .header.bg-white {
-    background-color: #e0e0e0 !important; }
+    background-color: #e0e0e0 !important;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }
     .header.bg-white .nav-link {
       color: #001a53 !important; }
   .header .navbar.bg-light {
     background: transparent !important; }
+  .header .navbar .navbar-collapse {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    position: fixed;
+    left: -213px;
+    top: 0;
+    padding: 90px 15px 10px;
+    background: #001a53;
+    z-index: 999;
+    min-width: 213px;
+    min-height: 100vh;
+    -webkit-transition: 0.4s all;
+    transition: 0.4s all; }
+  .header .navbar .navbar-collapse.show {
+    left: 0; }
+  .header .navbar.navbar-light .navbar-nav .nav-link {
+    color: #fff; }
+  .header .navbar-light .navbar-toggler[aria-expanded="false"] .navbar-toggler-icon {
+    background-image: url(../img/toggler-icon.svg); }
+  .header .navbar-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url(../img/toggler-close-icon.svg); }
+  .header .navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background-color: #fff; }
+
+.navbar-expand-md .navbar-nav .nav-item:last-of-type .nav-link {
+  padding-right: 0; }
+
+.navbar-expand-md .navbar-nav .nav-link {
+  font-size: 14px;
+  padding-right: 54px;
+  font-weight: 500; }
+  .navbar-expand-md .navbar-nav .nav-link:hover {
+    color: #ff841b !important; }
 
 .banner-area {
   background-size: cover;
@@ -18752,11 +18789,17 @@ a:focus {
 
 @media (max-width: 1199px) {
   .footer-menu li a {
-    padding: 10px; } }
+    padding: 10px; }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 15px; } }
 
 @media (max-width: 991px) {
   .counting-item p {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 10px; }
+  .navbar-brand {
+    margin-right: 20px; } }
 
 @media (max-width: 767px) {
   .banner-area {
@@ -18766,7 +18809,12 @@ a:focus {
   .banner-content-wrapper .banner-title {
     font-size: 30px; }
   .banner-content-wrapper .banner-sub-title {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff !important; } }
 
 @media (max-width: 575px) {
   .vision-mission-box-wrapper .item-box {

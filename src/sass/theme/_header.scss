@@ -8,6 +8,7 @@
 
     &.bg-white {
         background-color: #e0e0e0 !important;
+        box-shadow: 0 5px 10px rgba($black, 0.4);
         .nav-link {
             color: $tmpcolor !important;
         }
@@ -16,6 +17,74 @@
     .navbar {
         &.bg-light {
             background: transparent !important;
+        }
+
+        .navbar-collapse {
+            flex-basis: auto;
+            position: fixed;
+            left: -213px;
+            top: 0;
+            padding: 90px 15px 10px;
+            background: $tmpcolor;
+            z-index: 999;
+            min-width: 213px;
+            min-height: 100vh;
+            transition: 0.4s all;
+        }
+
+        .navbar-collapse {
+            &.show {
+                left: 0;
+            }
+        }
+
+        &.navbar-light {
+            .navbar-nav {
+                .nav-link {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .navbar-light {
+        .navbar-toggler[aria-expanded="false"] {
+            .navbar-toggler-icon {
+                background-image: url(../img/toggler-icon.svg);
+            }
+        }
+    
+        .navbar-toggler[aria-expanded="true"] {
+            .navbar-toggler-icon {
+                background-image: url(../img/toggler-close-icon.svg);
+            }
+        }
+    
+        .navbar-toggler {
+            color: $white;
+            border-color: $white;
+            background-color: $white;
+        }
+    }
+}
+
+.navbar-expand-md {
+    .navbar-nav {
+        .nav-item {
+            &:last-of-type {
+                .nav-link {
+                    padding-right: 0;
+                }
+            }
+        }
+        .nav-link {
+            font-size: 14px;
+            padding-right: 54px;
+            font-weight: 500;
+
+            &:hover {
+                color: $orange !important;
+            }
         }
     }
 }
