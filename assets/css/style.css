@@ -18598,6 +18598,17 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     z-index: 1; }
 
+.counting-item:hover .counting-icon {
+  border-color: #ff841b; }
+
+.counting-item .counting-number {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ff841b; }
+
+.counting-item p {
+  margin-bottom: 0; }
+
 .contact-us-area {
   background-color: #fafafa; }
   .contact-us-area .form-control {
@@ -18742,6 +18753,10 @@ a:focus {
 @media (max-width: 1199px) {
   .footer-menu li a {
     padding: 10px; } }
+
+@media (max-width: 991px) {
+  .counting-item p {
+    margin-bottom: 20px; } }
 
 @media (max-width: 767px) {
   .banner-area {

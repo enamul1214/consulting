@@ -288,6 +288,24 @@
         z-index: 1;
     }
 }
+
+.counting-item {
+    &:hover {
+        .counting-icon {
+            border-color: $orange;
+        }
+    }
+
+    .counting-number {
+        font-size: 50px;
+        font-weight: 600;
+        color: $orange;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
 // Counting End
 
 // Contact Us Start
