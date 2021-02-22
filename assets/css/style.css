@@ -18412,21 +18412,6 @@ a.text-dark:hover, a.text-dark:focus {
       color: #001a53 !important; }
   .header .navbar.bg-light {
     background: transparent !important; }
-  .header .navbar .navbar-collapse {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    position: fixed;
-    left: -213px;
-    top: 0;
-    padding: 90px 15px 10px;
-    background: #001a53;
-    z-index: 999;
-    min-width: 213px;
-    min-height: 100vh;
-    -webkit-transition: 0.4s all;
-    transition: 0.4s all; }
-  .header .navbar .navbar-collapse.show {
-    left: 0; }
   .header .navbar.navbar-light .navbar-nav .nav-link {
     color: #fff; }
   .header .navbar-light .navbar-toggler[aria-expanded="false"] .navbar-toggler-icon {
@@ -18814,7 +18799,22 @@ a:focus {
     padding-right: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fff !important; } }
+    color: #fff !important; }
+  .header .navbar .navbar-collapse {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    position: fixed;
+    left: -213px;
+    top: 0;
+    padding: 90px 15px 10px;
+    background: #001a53;
+    z-index: 999;
+    min-width: 213px;
+    min-height: 100vh;
+    -webkit-transition: 0.4s all;
+    transition: 0.4s all; }
+  .header .navbar .navbar-collapse.show {
+    left: 0; } }
 
 @media (max-width: 575px) {
   .vision-mission-box-wrapper .item-box {

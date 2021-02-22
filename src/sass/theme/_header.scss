@@ -19,25 +19,6 @@
             background: transparent !important;
         }
 
-        .navbar-collapse {
-            flex-basis: auto;
-            position: fixed;
-            left: -213px;
-            top: 0;
-            padding: 90px 15px 10px;
-            background: $tmpcolor;
-            z-index: 999;
-            min-width: 213px;
-            min-height: 100vh;
-            transition: 0.4s all;
-        }
-
-        .navbar-collapse {
-            &.show {
-                left: 0;
-            }
-        }
-
         &.navbar-light {
             .navbar-nav {
                 .nav-link {
