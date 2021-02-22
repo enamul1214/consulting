@@ -1,0 +1,58 @@
+.footer-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    p {
+        a {
+            color: $orange;
+        }
+    }
+}
+
+.footer-menu {
+    li {
+        a {
+            padding: 5px 17px;
+            color: $white;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.address-content {
+    p {
+        color: $body-color;
+    }
+
+    .social-media-list {
+        .fa {
+            font-size: 2rem;
+        }
+
+        li {
+            a {
+                padding-right: 15px;
+                color: $orange;
+
+                &:hover {
+                    color: $tmpcolor;
+                }
+            }
+
+            &:last-of-type {
+                a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

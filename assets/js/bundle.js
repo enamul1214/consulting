@@ -20827,6 +20827,21 @@ return Popper;
 
 ;
 jQuery(document).ready(function($) {
+
+    /*  Window scroll function
+    ============================================= */
+    $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+        // Scroll function for header
+        if (scroll) {
+            $('.header').addClass('bg-white');
+        } else {
+            $('.header').removeClass('bg-white');
+        } 
+    });
+
+    /*  Our Work Slider
+    ============================================= */
     $('.our-work-slider').slick({
         dots: true,
         infinite: true,
@@ -20855,6 +20870,8 @@ jQuery(document).ready(function($) {
         ]
     });
 
+    /*  Team Slider
+    ============================================= */
     $('.team-slider').slick({
         dots: true,
         infinite: true,

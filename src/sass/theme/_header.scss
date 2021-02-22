@@ -1,5 +1,18 @@
 .header {
+    @extend .transition;
     z-index: 9999;
+
+    .nav-link {
+        color: $white !important;
+    }
+
+    &.bg-white {
+        background-color: #e0e0e0 !important;
+        .nav-link {
+            color: $tmpcolor !important;
+        }
+    }
+
     .navbar {
         &.bg-light {
             background: transparent !important;

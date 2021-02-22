@@ -265,3 +265,48 @@
 }
 
 // Achieve End
+
+// Counting Start
+.counting-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($tmpcolor, 0.8);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+// Counting End
+
+// Contact Us Start
+.contact-us-area {
+    background-color: #fafafa;
+
+    .form-control {
+        height: calc(2.5em + 0.75rem + 2px);
+        border: 1px solid #eaeaea;
+        @extend .transition;
+
+        &:focus {
+            box-shadow: 0 0 0 0.05rem $tmpcolor;
+        }
+    }
+    textarea {
+        &.form-control {
+            min-height: 180px;
+        }
+    }
+}
+// Contact Us End
