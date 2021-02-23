@@ -15,6 +15,18 @@
             }
         }
     }
+
+    .service-box-wrapper {
+        padding: 30px 25px 10px;
+        width: 95%;
+    }
+
+    .testimonial-slider {    
+        .slick-dots {
+            bottom: 20px;
+            left: -30px;
+        }
+    }
 }
 // (desktops, less than 1200px)
 
@@ -36,6 +48,13 @@
 
     .navbar-brand {
         margin-right: 20px;
+    }
+
+    .testimonial-slider {    
+        .slick-dots {
+            bottom: -25px;
+            left: inherit;
+        }
     }
 }
 //(tablets, less than 992px)
@@ -92,6 +111,14 @@
             }
         }
     }
+
+    .testimonial-slider {
+        .testimonial-slide-item {
+            .featured-image {
+                margin: 0 auto;
+            }
+        }
+    }
 }
 //(landscape phones, less than 768px)
 
@@ -111,5 +138,25 @@
             }
         }
     }
+
+    .service-box-wrapper {
+        width: 98%;
+    }
 }
 //(portrait phones, less than 576px)
+
+@media (max-width: 400px) { 
+    .testimonial-slider {
+        .testimonial-slide-item {
+            .featured-image {
+                min-width: 245px;
+                width: 245px;
+                height: 245px;
+    
+                &:before {
+                    right: 10px;
+                }
+            }
+        }
+    }
+}

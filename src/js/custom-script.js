@@ -4,6 +4,7 @@ jQuery(document).ready(function($) {
 
     /*  Window scroll function
     ============================================= */
+    let a = 0;
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         // Scroll function for header
@@ -11,7 +12,35 @@ jQuery(document).ready(function($) {
             $('.header').addClass('bg-white');
         } else {
             $('.header').removeClass('bg-white');
-        } 
+        }
+
+
+        // Counting Effect
+        let oTop = $('#counter').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counting-number').each(function() {
+            let $this = $(this),
+                countTo = $this.attr('data-count');
+            $({
+                countNum: $this.text()
+            }).animate({
+                countNum: countTo
+                },
+
+                {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+
+                });
+            });
+            a = 1;
+        }
     });
 
     /*  Our Work Slider
@@ -70,28 +99,17 @@ jQuery(document).ready(function($) {
                 }
             }
         ]
-    })
-});
+    });
 
-
-jQuery(window).on('load', function(){
-    //wow js
-    var wow = new WOW(
-      {
-          boxClass:     'wow',      // animated element css class (default is wow)
-          animateClass: 'animated', // animation css class (default is animated)
-          offset:       40,          // distance to the element when triggering the animation (default is 0)
-          mobile:       false,       // trigger animations on mobile devices (default is true)
-          live:         true,       // act on asynchronously loaded content (default is true)
-          callback:     function(box) {
-          // the callback is fired every time an animation is started
-          // the argument that is passed in is the DOM node being animated
-          },
-          scrollContainer: null // optional scroll container selector, otherwise use window
-      }
-    );
-     <!--[if !IE]> -->
-        wow.init();
-    <!-- <![endif]-->
-
+    /*  Team Slider
+    ============================================= */
+    $('.testimonial-slider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });

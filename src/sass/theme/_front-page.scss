@@ -42,10 +42,35 @@
         right: 0;
         top: 0;
         height: 100%;
-        width: calc(100% - 550px);
+        width: calc(100% - 40%);
         z-index: 1;
     }
 }
+
+.service-box-wrapper {
+    padding: 50px 45px;
+    width: 1045px;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba($black, 0.18);
+}
+
+.key-points-box {
+    .key-point {
+        padding-right: 35px;
+    }
+
+    .key-point-icon {
+        min-width: 50px;
+    }
+
+    .key-point-content-box {
+        .key-point-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+
 // Our Service End
 
 // Our Work Start
@@ -266,6 +291,47 @@
 
 // Achieve End
 
+// Testimonial Start
+.testimonial-slider {
+    .testimonial-slide-item {
+        .featured-image {
+            min-width: 345px;
+            width: 345px;
+            height: 345px;
+            border-radius: 50%;
+
+            &:before {
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                content: "";
+                background: #eaeaea url(../img/testimonial/quote-icon.png);
+                height: 60px;
+                width: 60px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .client-name {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .slick-dots {
+        bottom: 70px;
+        left: -115px;
+    }
+}
+// Testimonial End
+
 // Counting Start
 .counting-area {
     background-size: cover;
@@ -297,9 +363,19 @@
     }
 
     .counting-number {
+        position: relative;
         font-size: 50px;
         font-weight: 600;
         color: $orange;
+
+        &.with-percentage {
+            &:after {
+                position: absolute;
+                content: '%';
+                font-size: 50px;
+                top: 0;
+            }
+        }
     }
 
     p {
